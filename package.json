@@ -1,0 +1,33 @@
+{
+  "name": "hacktheoceanbackend",
+  "version": "1.0.0",
+  "description": "backend complementario para proyecto HackTheOcean hackaton de Launch X ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/.bin/jest",
+    "linter": "node ./node_modules/eslint/bin/eslint.js",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
+    "server": "node ./lib/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackTheOcean/HackTheOceanBackEnd.git"
+  },
+  "author": "HackTheOcean",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/HackTheOcean/HackTheOceanBackEnd/issues"
+  },
+  "homepage": "https://github.com/HackTheOcean/HackTheOceanBackEnd#readme",
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "express": "^4.18.1",
+    "jest": "^28.1.0",
+    "prisma": "^3.14.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.14.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1"
+  }
+}
