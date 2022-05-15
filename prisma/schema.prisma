@@ -9,3 +9,15 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model wildlife{
+  id Int @id @default(autoincrement())
+  animal String @unique
+  detalles String @db.VarChar(10000)
+}
+
+model tipoImpacto{
+  id Int @id @default(autoincrement())
+  nombreImpacto String @unique
+  detalleImpacto String @db.VarChar(1000)
+}
